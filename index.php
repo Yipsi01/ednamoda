@@ -45,7 +45,19 @@ case "login":
 case "logout":
     include_once "controllers/security/logout.control.php";
     die();
+//agregar ruta
+case "ficha":
+    include_once "controllers/ficha.control.php";
+    die();
+case "modas":
+    include_once "controllers/modas.control.php";
+    die();
+case "moda":
+    include_once "controllers/moda.control.php";
+    die();
 }
+
+
 
 //Este switch se encarga de todo el enrutamiento que ocupa login
 $logged = mw_estaLogueado();
